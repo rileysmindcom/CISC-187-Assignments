@@ -77,9 +77,9 @@ int main()
 ## 3. Example Steps
 ### Example 1: Creating an Array of 100 Elements
 We first create an integer array that contains 100 elements
-'''
+
 int numbers [100];
-'''
+
 These indexes range between 0 to 99 because C++ arrays use zero-based indexing
 
 As example:
