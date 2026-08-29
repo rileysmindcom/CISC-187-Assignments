@@ -75,7 +75,7 @@ int main()
 ```
 
 ## 3. Example Steps
-### Step 1: Creating an Array of 100 Elements
+### Example 1: Creating an Array of 100 Elements
 We first create an integer array that contains 100 elements
 '''
 int numbers [100];
@@ -87,7 +87,7 @@ As example:
 numbers[0] = 1;
 numbers[99] = 100;
 
-### Step 2: Size of Each Element
+### Example 2: Size of Each Element
 Using the sizeof() can be used to see how much memory one element occupies
 
 sizeof(numbers[0])
@@ -103,7 +103,7 @@ Which, means
 
 10 x 4 = 400 bytes
 
-### Step 3: What are the Steps to Array Operations?
+### Example 3: What are the Steps to Array Operations?
 An array contains 100 elements:
 1. The program reads each element as an index
 2. We search for a value that is not contained inside the array. Each element must be checked.
@@ -112,7 +112,7 @@ An array contains 100 elements:
 5. Deletion at the beginning. Remaining elements must shift to the left.
 6. Then deletion at the end. The last element can be removed without shifting others.
 
-### Task 4: Finding Every "Apple"
+### Example 4: Finding Every "Apple"
 To find every Apple, the program needs to check every element in the array.
 This seen using the Lines:
 
@@ -128,7 +128,7 @@ If the first element is apple, then the program would need to examine the rest o
 The array size of N to find every occurrence:
 N steps --> O(N)
 
-### Task 5: How do we Find Memory Address of an Apple?
+### Example 5: How do we Find Memory Address of an Apple?
 We can allow C++ to find the memory address to an array by using its name.
 
 cout << numbers << endl;
