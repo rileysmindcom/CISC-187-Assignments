@@ -143,7 +143,7 @@ cout << &numbers[0] << endl;
 <img width="712" height="262" alt="W1-2_2 Arrays" src="https://github.com/user-attachments/assets/4e64238e-25f4-4d1b-aab6-153d84eb083b" />
 
 
-## Challenges I've Experienced
+## 5. Challenges I've Experienced
 
 One of the challenges I've faced was figuring out how to number the steps of changes to depend where an operation takes place for an array. If we decided insertion, or deletion to an element at the beginning requires other elements to be shifted.  Another was viewing the difference between the size of an array element, and the total size. Which, is why I used sizeof() to determine the amount of memory necessary by an individual element for the entire array. And, at last was the memory address of an array. To use numbers, and numbers[0] helped explain the beginning of an array that connects with the address of the first element.
 
