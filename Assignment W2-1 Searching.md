@@ -159,3 +159,88 @@ int main()
     return 0;
 }
 ```
+## 3. Examples
+
+### 1. Example 1: Linear Search
+If were given the array as:
+[2, 4, 6, 8, 10, 12, 13]
+
+The target is:
+8
+
+This is because Linear search starts from the first element. Checking each element left to right.
+As example we can make
+Four Comparisons:
+1. Comparing 2 with 8 is not equal
+2. Comparing 6 with 8 is not equal
+3. Comparing 4 with 8 is not equal
+4. Comparing 8, with 8 is Found.
+
+This is because linear search requires 4 elements to make a comparison
+
+### 2. Example 2: Binary Search
+As we use
+[2, 4, 6, 8, 10, 12, 13]
+
+Because the target is 8
+We can begin binary search in the middle of the sorted array
+
+The middle element is:
+8
+
+If we compare:
+ 8 = 8
+
+Meaning the target is found.
+Which, is why binary search requires 1 element-to-target comparison
+
+### Example 3: Binary Search With 100,000 Elements
+Every comparison for a search space that's a binary search is cut in half.
+
+Making it possible for the maximum number of elements to be calculated as
+
+floor(log2(100000)) + 1
+
+Because
+
+log2(100000) = 16.61
+
+However, we receive
+floor(16.61) + 1 = 7
+
+This is because the maximum number of elements for comparisons is
+17 comparisons
+Making binary search effective because of the remaining search space
+that starts with:
+
+100,000
+50,000
+25,000
+12,500
+6,250
+3,125
+
+Instead of constantly checking every element one at a time.
+
+## Example 4: Linear Search vs. Binary Search
+
+### Linear Search:
+Is O(N), and needs up for 100,000 comparisons because it examines each element individually
+
+### Binary Search
+Is O(log N)
+Sorted data is required to check the middle, and divide the search region in half each time.
+
+The size of the binary search space decreases one element after each comparison for a linear search, and binary decreases around a half after each comparison.
+
+## Example 5: Randomized Search
+The search checks every comparison randomly selecting an unexamined element as a result in the remaining search space that is available.
+
+And, can examine every element. From its worst-case complexity is O(N)
+
+## 4. Flowchart
+<img width="662" height="322" alt="Assignment W2-1_1" src="https://github.com/user-attachments/assets/40bebabb-e07f-43cb-967e-d89c96fe8dc7" />
+
+
+## 5. Challenges
+The first challenge was understanding the difference between binary, and linear search. This was because it was simple assuming both algorithms would look through the components until they located the goal. While, binary search operates differently because it eliminates around half of the remaining search space, and each comparison uses a sorted order of data. Another was ensuring the correction fur count element-to-target comparisons. I needed to make sure that the comparison counter increased with an element was compared with the target instead of counting operations performed by the algorithm. Then I used randomized search because the algorithm randomly selects indices to make sure the same index is never examined twice from one search. And at last was ordering the elements. This is because the algorithm needs to examine a large portion dataset of 100,000 elements.
