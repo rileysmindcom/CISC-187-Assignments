@@ -54,3 +54,4 @@ The reason is Big-O does not describe every single operation instead introducing
 The challenges I've experienced was first understanding how insertion sort starts with i = 1. Because the method relies with the first element in the present in the first sorted section. Which is why the beginning at i =2 or i = 3 could minimize the number of operations while making the method incorrect was another challenge. I corrected this by skipping iterations meaning some elements could never be properly inserted into the sorted portion. This helped me discover how the algorithm’s Big-O complexity does not necessarily need to be altered by decreasing the number of operations. But, I could enhance the search algorithm for O(N) by stopping early, and doing a lot less work in practice.
 
 ## Assignment W3-4>2/3 Sorting II Video
+https://drive.google.com/file/d/1ZNmCnJZ-InNihJepJYxk6Z1qKWfKAxkY/view?usp=sharing
