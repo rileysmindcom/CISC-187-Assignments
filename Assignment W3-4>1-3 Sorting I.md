@@ -73,3 +73,4 @@ As the dataset expands, time complexity becomes important because inefficient al
 Some of the challenges I’ve experienced were distinguishing between nested, and sequential loops. Since, first I needed to consider why two loops didn’t always imply O(N). Then discovering nested loops quadruple the amount of effort, while sequential loops combine together. Then understanding why constants are disregarded in Big-O notation. And, at last was seeing how Big-O is focussed on how the algorithm grows as the input size becomes larger instead of the same exact number of the operations.
 
 ## My Assignment W3-4>1/3 Sorting-I Video
+https://drive.google.com/file/d/1AThmmKi4YNdTYk1SMQ0F5zcvHdpNzyv_/view?usp=sharing
