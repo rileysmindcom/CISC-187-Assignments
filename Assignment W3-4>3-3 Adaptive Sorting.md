@@ -192,3 +192,4 @@ The limitations of Big-O analysis describe how an algorithm runs as time increas
 My first challenge was understanding how to categorize the initial array without first sorting it. Then determining how much of the array was already in order. This helped me understand using neighboring pairs. Selecting the thresholds needed for three classes presented. Creating categories for the program to assess the percentage of ordered adjacent pairs. I had to ensure that the software was able to show the sorted array after sorting, and the original array before sorting. Making it easier to confirm that the adaptive algorithm is operating. And, the last was to clarify why adding the pre-analysis did not alter the worst-case Big-O complexity, which was important to compare between O(N) classification, and the O(N^2) sorting step.
 
 ## Assignment W3-4>3/3 Adaptive Sorting Video
+https://drive.google.com/file/d/1GvfeH_be1aT26P58cd3wF9oQcDBD2gvo/view?usp=sharing
