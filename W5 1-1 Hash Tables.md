@@ -1,4 +1,4 @@
-# Assignment W5>1/1 Hash tables
+# Assignment W5>1/1 Hash Tables
 ## Lab Objective
 My lab objective is understanding how hash tables store, and retrieve key value pairs, and how hash functions impact those operations performances. In this lab I'll use linear probing to create a hash table, and handle collisions. I'll work on developing a hash function, handling collisions, and adding the finding records removing records with tombstones. Then figuring out the load factor. I will look into how a hash function's quality, and a table's fullness would have an impact on how many positions are looked at during operations. Another goal of this lab is comparing the hash table searching with linear, and binary to recognize why hash tables can provide O(1) average-case lookup while still having O(N) worst-case behavior. Then I will at last examine the difference between hashing, and encryption to identify situations where hash tables are, and are not appropriate data structures.
 ## Assignment Code
@@ -444,3 +444,6 @@ A username can be used as a key to retrieve a user profile, hash table can be he
 
 ## Challenges
 The challenges I've experienced was the difference between a key's home location, and its real position following a collision. Then I needed to understand how linear searching is available for the next position, and how the same searching sequence is used during that process. Then was understanding why tombstones are required when erasing records presented. To prevent an endless loop I needed to ensure that the software stops searching after examining each table location. And, at last was recognizing a hash-table efficiency by relating collisions, and load factor to the O(1) average, and O(N) worst-case performance.
+
+## Assignment Video Link:
+https://drive.google.com/file/d/1p7gJ1gvnicP68D3Js56bzZhdVBH9xkuR/view?usp=sharing
