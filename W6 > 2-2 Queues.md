@@ -158,7 +158,7 @@ This, would be better for advance frontIndex because it doesn't need to move any
 ```
 O(1)
 ```
-### Example 3, and 4:
+### Example 3, and 4 Circular Queue State:
 A circular queue will maintain
 
 frontIndex, rearIndex, and count
