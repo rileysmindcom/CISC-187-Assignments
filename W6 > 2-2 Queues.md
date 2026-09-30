@@ -186,14 +186,18 @@ rearIndex = (rearIndex + 1) % CAPACITY;
 Reveals the rear position
 The count is raised.
 By Using 
+
 ```
 ++rearIndex;
 ```
+
 And, can be insufficient because the index would eventually exceed or equal to the array's capacity. The index wraps back to zero becoming a result to the modulo operation.
 
 As an example, take a five-person capacity:
 rearIndex is 4:
-```(4 + 1) % 5 = 0
+
+```
+(4 + 1) % 5 = 0
 ```
 As a result, index 0 comes after index 4.
 
