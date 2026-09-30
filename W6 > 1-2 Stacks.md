@@ -1,6 +1,8 @@
 # Assignment W6 > 1/2 Stacks
+
 ## Lab Objective
 The objective of this lab is to create a stack using Last-in, and First-Out (LIFO) to solve real world problems. To describe the operation of LIFO behavior. Use an array for implementing a stack. Put push(), pop(), top(), full(), and size() as practice. Then analyze the topIndex of the stack. Identifying the underflow, and overflow, trace stack operations. Examine the stack operations complexity. And, then finding out if an expressions delimiters are unbalanced using a stack. Then determining the circumstance, where a stack is suitable or unsuitable.
+
 ## Assignment Code
 ```cpp
 #include <iostream>
@@ -171,8 +173,6 @@ int main() {
 }
 ```
 ## Analysis, and Reflection
-
-## Flowchart
 ### Example 1: Trace Stack Operations
 The stack begins empty
 
@@ -289,9 +289,27 @@ Top
 [10]
 ```
 ### Example 6: Complete Stack Testing
+The program evaluates when a stack is initially empty
 
+empty()
+
+Then there are five pushes
+
+size()
+top()
+and, two pop() functions. With a new size, and top.
+Removing every last component
+Managing underflow
+To fill the stack to capacity.
+Managing overflow, and then test showing that the stack avoids invalid operation, and keeps the proper LIFO order.
+## Flowchart Array-Based Stack
+<img width="602" height="553" alt="Array-Based Stack(1)" src="https://github.com/user-attachments/assets/0e153360-3e17-443d-9ec7-399a14d60e48" />
+
+## Flowchart Balanced-Delimiter
+<img width="792" height="935" alt="Balanced Delimiter Flowchart" src="https://github.com/user-attachments/assets/e16f1d17-4682-4129-b183-9db437c457fa" />
 
 
 # Challenges
+Some of the challenges I've experienced was recognizing why topIndex starts with -1 instead of 0. Because the first actual element is represented by index 0, as -1 indicates an empty stack. Then another was correctly managing boundary conditions presented. While pop(), and top() must avoid accessing an empty stack, push() must prevent writing past the last array position. I also had to realize the difference between overflow, and underflow. Because underflow occurs when attempting to access or remove an element from an empty stack, and overflow happens when attempting to add to a full stack. Then applying the stack approach to a balanced delimiters. Since each closing delimiter must be compared to the most recent opening delimiter discovered through the program. Since the most recent delimiter should be closed first, which is a direct implementation of LIFO. topIndex was a challenge because I needed to allow the software to visit the top of the stack directly instead of only looking at each piece. As a result to the primary stack operations to continue to be at O(1). And, at last is connecting these details to the LIFO principle. This became useful to look at topIndex, and top-only access restriction, which made it easier to understand how pop(), push(), and top() all behave together.
 
 # Assignment Video Link
