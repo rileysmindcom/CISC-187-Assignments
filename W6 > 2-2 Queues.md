@@ -1,7 +1,7 @@
 # Assignment W6 > 2/2 Queues
 
 ## Lab Objective
-The objective of this lab is to create a queue by looking at how effective First-In, First-Out(FIFO) processing is suported by a circular array. As an example we can describe the behavior of an FIFO, then recognize the front, and back of a line, trace queue operations manually, use an array to create a circular queue with a fixed capacity. Put enqueue(), front(), empty(), depqueue(), full(), and size() as practice. For circular wraparound we use modular arithmetic. TO identify underflow, and overflow in the queue. We can describ the ineffectiency of elements moving during dequeue(). Examine how complicated queue procedures are used in the terms of time. And, at last use queues to solve real-world computing problems.
+The objective of this lab is to create a queue by looking at how effective First-In, First-Out(FIFO) processing is suported by a circular array. As an example we can describe the behavior of an FIFO, then recognize the front, and back of a line, trace queue operations manually, use an array to create a circular queue with a fixed capacity. Put enqueue(), front(), empty(), depqueue(), full(), and size() as practice. For circular wraparound we use modular arithmetic. To identify underflow, and overflow in the queue. We can describ the ineffectiency of elements moving during dequeue(). Examine how complicated queue procedures are used in the terms of time. And, at last use queues to solve real-world computing problems.
 ## Assignment Code
 ```cpp 
 #include <iostream>
