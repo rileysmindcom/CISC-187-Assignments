@@ -1,7 +1,7 @@
 # Assignment W6 > 2/2 Queues
 
 ## Lab Objective
-The objective of this lab is to create a queue by looking at how effective First-In, First-Out(FIFO) processing is suported by a circular array. As an example we can describe the behavior of an FIFO, then recognize the front, and back of a line, trace queue operations manually, use an array to create a circular queue with a fixed capacity. Put enqueue(), front(), empty(), depqueue(), full(), and size() as practice. For circular wraparound we use modular arithmetic. To identify underflow, and overflow in the queue. We can describ the ineffectiency of elements moving during dequeue(). Examine how complicated queue procedures are used in the terms of time. And, at last use queues to solve real-world computing problems.
+The objective of this lab is to create a queue by looking at how effective First-In, First-Out(FIFO) processing is suported by a circular array. As an example we can describe the behavior of an FIFO, then recognize the front, and back of a line, trace queue operations manually, use an array to create a circular queue with a fixed capacity. Put enqueue(), front(), empty(), depqueue(), full(), and size() as practice. For circular wraparound we use modular arithmetic. To identify underflow, and overflow in the queue. We can describe the inefficiency of elements moving during dequeue(). Examine how complicated queue procedures are used in the terms of time. And, at last use queues to solve real-world computing problems.
 ## Assignment Code
 ```cpp 
 #include <iostream>
@@ -296,5 +296,6 @@ Then the overflow test tries to insert an eleventh value after filling all ten p
 ## Challenges
 Some of the challenges I've experienced were how frontIndex, and rearIndex move independently. Because a circular queue enables indexes to travel throughout the array it may be initially simpler to visualize a queue as a typical row of data. To understand the modulo operator's purpose presesented as (index + 1) % CAPACITY. This allows the index to reach the final array position and then return to 0. To recognize how the queue can reuse previously held spots was important. Then realizing why elements do not need to be moved following the dequeue presented. The program execution advances the frontIndex instead of shifting all other values the operation becomes effective. Then I needed to test the overflow, and underflow circumstances because they explain how the queue must safeguard itself against adding more values than it can hold or remove values when it is empty. The lesson I learned from this was that the values from logical order in the queue is not always reflected in the array's physical structure. All together frontIndex, rearIndex, and count all allow the physical array positions to wrap around while maintaining track of the logical queue. 
 
-
+## Assignment Video Link
+https://drive.google.com/file/d/17FvfFrfcrizdMk7LtKdcHFuwLrvSbcLh/view?usp=sharing
 
