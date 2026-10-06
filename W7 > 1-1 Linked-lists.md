@@ -311,3 +311,21 @@ temp = temp->next;
 Revealing that the program must follow pointers to reach another node.
 
 
+## Flowchart Linked-List Flow
+<img width="622" height="737" alt="Overall Linked List Flow" src="https://github.com/user-attachments/assets/85485bb2-575b-4b6f-a9f3-125a5595d7e4" />
+
+
+### Insert at Beginning
+<img width="592" height="202" alt="Insert at Beginning" src="https://github.com/user-attachments/assets/49ea0b2e-6490-48bf-8b6d-56c672c5c43d" />
+
+### Insert at End
+<img width="592" height="522" alt="Insert at End" src="https://github.com/user-attachments/assets/d19cb220-c48e-4093-bb4b-26f20f30e062" />
+
+### Delete a Node
+<img width="662" height="521" alt="Delete A Node" src="https://github.com/user-attachments/assets/a481bf0f-359e-4898-badf-43d8d65174bf" />
+
+
+## Challenges
+Some of the main challenges I've experienced was understanding how pointers link each node effectively by updating pointers when adding or removing nodes to ensure that dynamically memory is allocated, and erased. This became easier to understand why it was necessary to properly arrange the choices of Yes, and No in the three flowcharts. Then was recognizing why some operations such as traversal, search, and O(N), and initial insertion is O(1) was a challenge. This became easier because it gave me a chance to learn how linked lists operate by creating pointer diagrams that guide each operation such as dynamic memory allocation, and pointers.
+
+## Assignment Video Link
