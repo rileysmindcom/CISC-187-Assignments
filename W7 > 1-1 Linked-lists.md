@@ -329,3 +329,4 @@ Revealing that the program must follow pointers to reach another node.
 Some of the main challenges I've experienced was understanding how pointers link each node effectively by updating pointers when adding or removing nodes to ensure that dynamically memory is allocated, and erased. This became easier to understand why it was necessary to properly arrange the choices of Yes, and No in the three flowcharts. Then was recognizing why some operations such as traversal, search, and O(N), and initial insertion is O(1) was a challenge. This became easier because it gave me a chance to learn how linked lists operate by creating pointer diagrams that guide each operation such as dynamic memory allocation, and pointers.
 
 ## Assignment Video Link
+https://drive.google.com/file/d/1LmVME-Wa3O30YdaSLHR2yIO55GKuLZtr/view?usp=sharing
