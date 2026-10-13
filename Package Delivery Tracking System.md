@@ -1,4 +1,3 @@
-<img width="582" height="411" alt="Package Delivery Tracking System" src="https://github.com/user-attachments/assets/cf2aba2a-a0ef-4c44-a0cb-92c1107d0381" />
 # Package Delivery Tracking System
 ## Overview Lab Objective
 
