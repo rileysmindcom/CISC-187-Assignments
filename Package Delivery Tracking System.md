@@ -1,5 +1,6 @@
 # Package Delivery Tracking System
 ## Overview Lab Objective
+The objective is to handle deliveries through FIFO order searching by tracking number, changing statuses, creating sorted reports, and computes statistics. The tracking number, weight, delivery, destination, and recipient status all begin with *Waiting* are all recorded for every package. As an addition to insertion, linear search, and selection sort the program makes its usage for hash table for an effective tracking number look-ups, a queue can control processing ordering, and a vector storing data. This helps manage empty queues, collections, verifying user input, and reject invalid weights, and duplication tracking numbers.
 
 ## Assignment Code
 ```cpp
@@ -690,12 +691,45 @@ int main()
 }
 ```
 ## Analysis, and Reflection
+There are three primary data structures used by the Package Delivery Tracking System. The first is an unordered map used for effective tracking-number look-ups as a vector to store package records, and a queue for processing shipments in First-In First-out order. While the hash table lookup for averages O(1), and can approach O(N) in worst case since linear search has O(N) time complexity. While insertion sort, and selection sort would require O(N^2) time queue insertion, and removal take O(1). To maintain the original records, and their hash-table indexes so the program can sort, and copy the package collection. This project helped me understand to maintain consistent package information through applying searching, and sorting techniques to choose a suitable data structure. I also reflect on the software functions. Recognizing why it is important to test invalid inputs, and duplicate tracking numbers such checking empty queues, and status updates.
 
 ## Testing, and Process
+### Step 1: Start the Program
+I first start the program with all nine menu options that appear when running the program. To make sure that the menu functions are both valid, and invalid, and whether they are working correctly.
+
+### Step 2: Add Packages
+Then I add packages that use valid information to test duplicate tracking numbers, empty fields zero or negative weight, and non-numeric weights to make sure the data is accurate. This is also to check invalid entries are rejected, and valid packages are added to the *Waiting Status*.
+
+### Step 3: Test FIFO Processing
+When the queue is empty I test processing after adding multiple packages, to process them sequentially. Then looking at the message appearing in an empty queue so the packets are processed for First-In, First-Out order, and their statuses change to process.
+
+### Step: 4: Searching for Test Packages
+I use linear search, and hash-table lookup to discover tracking numbers that are both present, and nonexistent. These approaches helped me locate the current packages, and identify, what is missing.
+
+### Step 5: Test Package Status Updates
+Once the packages are updates from Processed to In Transit, are finally at Delivered. I test for invalid status transitions as well. Observing when invalid transitions are rejected, and valid transitions are accurate.
+
+### Step 6: Display Waiting Packages
+I show that the Packages are waiting without processing any Packages observing the waiting queue twice. Making sure that packages stay in FIFO order, and are not eliminated by showing the queue.
+
+### Step 7: Display Packages
+After adding, and processing records in different delivery statuses, I represent every shipment. So each package will reveal its current state, and information.
+
+### Step 8: Generate Sorted Reports
+I create reports that are arranged by tracking number, receiver, and weight to verify the initial collection. So the reports maintain the original vector, and hash-table indexes while conforming to the chosen sorting order.
+
+### Step 9: Calculate System Statistics
+I look at the total weight, average weight, and delivery status totals, package counts, and the heaviest package. Checking whether the system is empty. So that the statistics for empty collections are handled without division by zero.
+
+### Step 10: Verify Search, and Sorting Complexity
+Then I verify whether the sorting functions, and search confirm that the program uses intended algorithms as a result for linear search that's O(N), O(1) for hash-table lookup, O(N^2) for insertion sort, and O(N^2) for selection sort
+
+### Step 11: Final Verification
+I rebuild, and execute the program covering the key features, and examining what is necessary for the program to compile.
 
 ## Flowchart
 <img width="582" height="411" alt="Package Delivery Tracking System" src="https://github.com/user-attachments/assets/7d47bd11-d8ac-4f22-8fcc-06be020c2d3b" />
 
 ## Challenges
-
+Some of the challenges I've experienced was keeping the vector, queue, and hash table consistent to make sure that the shipments were processed through FIFO order checking whether duplicated tracking numbers are rejected. Another was validating user input to perform hash, and linear searches, sorting package reports without altering the original collection. Then looking at how to compute with the statistics to properly use delivery status transitions to manage empty collections securely. To confirm that the system works, and can use the proper data structures, and algorithms was a challenge, and became more easier when checking boundary conditions, incorrect inputs, and other operations that became necessary.
 ## Assignment Video Link:
