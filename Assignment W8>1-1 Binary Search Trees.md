@@ -295,8 +295,11 @@ To avoid memory leaks, dynamically allocated nodes need to be handled carefully.
 
 ### Part 15: Main Function
 The BST operations are tested from their outcomes, and can be shown by the main function. We first verify that insertion, searching, traversal, and deletion function can be properly supported by running the program. Which, now I have a better understanding of how, and why different functions in C++ can interact with each other. So I can use these ideas that require organizing, and searching data.
+
 ## Flowchart
 <img width="762" height="320" alt="Binary search trees Diagram" src="https://github.com/user-attachments/assets/f16d67fd-a33f-4d49-ab8e-a7a501c214c2" />
+
 ## Challenges
 Some of the challenges I've experienced were understanding how recursion, and pointers reattach the tree after adding or removing a node. Then I had to manage three deletion scenarios to determine the in-order successor, which this is when a node has two children. But, first I had to confirm that the removed values could no longer be located, and that the inorder traversal remained sorted. And, at last was the destructor that releases the children before removing each parent, which was necessary to manage the dynamically generated nodes.
+
 ## Assignment Video Link
