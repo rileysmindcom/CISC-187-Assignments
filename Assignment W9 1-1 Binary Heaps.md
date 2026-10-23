@@ -200,31 +200,36 @@ int main() {
 ## Analysis, and Reflection
 
 ### Step 1: Understanding a Max-Heap
-A complete binary tree where each parent is greater than or equal to its offspring is called a max-heap.
+A complete binary tree in which every parent is greater than or equal to its offspring is called a binary max-heap. So the larger value is kept at the bottom of the heap because of this structure.
 
 ### Step 2: Array Representation
-We use a vector to calculate the parent, and child indices, and keep the heap items in level order.
+Heap elements are stored in level order by the application using a vector. To explore the heap, parent, and child indices are computed using mathematical formulas.
+```
+Parent index = (i - 1) / 2
+Left child   = 2 * i + 1
+Right child  = 2 * i + 2
+```
 
 ### Step 3: Insertion
-When rebuilding the max-heap situation the program utilizes trickle-up after inserting a value at the end of the vector.
+The program adds a new value to the vector's end when it is inserted. Until the max-heap property is restored, the trickle-up process then compares a new value with its parent, and switches them.
 
 ### Step 4: Accessing the Maximum
-The greatest value is accessible in O(1) time, to keep it at index zero.
+The program receives the maximum value through O(1) time because it is stored at index zero. Which, eliminates the need to rearranging the heap, and increase the performance of accessing the highest-priority value.
 
 ### Step 5: Removing the Maximum
-The program replaces the root with its last element to use trickle-down restoring the heap condition.
+We can substitute the final vector element for the root as the software eliminates the maximum. Then it moves the replacement value downward such as trickle-down to restore the max-heap trait
 
 ### Step 6: Handling Edge Cases
-The program checks, and safely removes a single element looking for empty heaps.
+Before the program checks whether to attempt removing the heap's maximum value, the program has to verify whether its empty. So we can safely manage one-element heap to prevent it accessing to an empty heap's limit by using an exception.
 
 ### Step 7: Big-O Analysis
-In the worst case reaching the maximum takes O(1) time, meaning insertion, and removal take O(log N) time.
+Since the value is kept at the root. When we access the maximum requires O(1) time. Because values could move through the heap's height, insertion to remove, and take O(log N) time in its worst case.
 
 ### Step 8: Priority Queues
-For priority queue applications, a max-heap effectively handles the highest-priority data first.
+We can observe that the highest-priority value maintains at the root, a max-heap becomes helpful to creating a priority queue. This enables the highest-priority item to be processed through the program before lower-priority items.
 
 ### Step 9: Reflection
-This gave myself a chance to reflect how binary heaps preserve their structure to enhance program efficiency.
+This gave myself a chance to learn how binary heaps facilitate insertion, and removes throughout the program during this experiment. To discover how to test different edge situations making sure the program functions using trickle-up, and trickle-down to restore the max-heap property.
 
 ## Flowchart
 <img width="672" height="456" alt="W9 1-1 Binary Heaps" src="https://github.com/user-attachments/assets/65a9824f-7267-44ff-8c84-c87af3224a99" />
