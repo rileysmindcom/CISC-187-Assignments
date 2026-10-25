@@ -49,7 +49,6 @@ private:
             int right = rightChildIndex(index);
             int largerChild = index;
 
-            // Start with the current node and compare only children that exist.
             if (left < count && heap[left] > heap[largerChild]) {
                 largerChild = left;
             }
@@ -58,7 +57,6 @@ private:
                 largerChild = right;
             }
 
-            // The current node is already >= its children.
             if (largerChild == index) {
                 break;
             }
