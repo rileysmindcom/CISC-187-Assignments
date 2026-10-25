@@ -335,3 +335,4 @@ This gave myself a chance to learn how binary heaps facilitate insertion, and re
 Some of the challenges I've experienced were understanding how a parent, and child indices function in the program using array-based heap to implement trickle-up, and trickle-down while preserving the max-heap shown was a challenge. But, became easier as I recognized how to properly handle edge cases by testing empty heaps, single element heaps, and many swaps.
 
 ## Assignment Video Link
+https://drive.google.com/file/d/1c7nMNEnbH_X62HVMn3bRmdio5QgEO_7z/view?usp=sharing
