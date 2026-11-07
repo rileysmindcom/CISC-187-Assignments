@@ -166,10 +166,12 @@ int main()
 
 ## Background, and Flowchart
 <img width="572" height="562" alt="W10 - 11 1-1 Graphs" src="https://github.com/user-attachments/assets/e68973b5-29b1-4eb7-aba1-9bef2f50830b" />
+
 This is a graph we can use to label the relationships, and connections with these items
 The vertices, and edges join them together to make up a graph, and I was able break them down into elements used for this terminology
 
 We can breakdown this terminology by describing the components used for this flowchart:
+
 Vertex
 - Is a single object or item in the graph.
 
