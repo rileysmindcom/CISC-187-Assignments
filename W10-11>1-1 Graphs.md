@@ -785,6 +785,8 @@ The technique is used to make an assumption that the vertex's distance cannot ge
 Some of the challenges were understanding how adjacency lists, and matrices are expressed through the connection of the graph. While adjacency matrices use a two-dimensional array for describing the connections between the adjacency lists to record the vertices. Another was the differences between depth-first search, and breadth-first search. Because both algorithms visit the related vertices, but because DFS uses a stack, and BFS utilizes a queue their traversal orders are different. Because the graphs might contain cycles. Making it important to understand how to discovered, and visited vertices function. I also found an algorithm that could be used to process the same connections over again without keeping track of visited vertices. Dijkstra's algorithm was a challenge because of its method for calculating weighted shortest paths because we would have to update the predecessor values to evaluate the distances used. This all became easy at the end because it helped me explain how these graphs, and traversal algorithms all work together to understand their connections throughout the program.
 
 
+# Assignment Video Link
+https://drive.google.com/file/d/1gGmC_7uVKTVYHSpOeAuSb_FuPzC7jF-g/view?usp=sharing
 
 
 
