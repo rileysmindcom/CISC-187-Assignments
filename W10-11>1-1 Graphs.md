@@ -1,4 +1,4 @@
-# Assignment W10 > 11 1-1 Graphs
+# Assignment W10-11 1/1 Graphs
 ## Lab Objective
 My objective is understanding the relationships between connected items, and how a standard graph represents the traversal methods used in C++. This helped me identify vertices, edges, adjacency, distances, and pathways by studying breadth-first Search (BFS), and Depth-First Search (DPS), Dijkstra's shortest-path method, and comparing the differences between graphs, and trees. This lab also explains the time, and space complexity of the graph operations that can determine, and be used to analyze Big-O notation.
 
