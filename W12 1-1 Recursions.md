@@ -520,7 +520,7 @@ Recursion can be helpful because it allows the function to repeat the process de
 Some of the challenges were understanding how recursive functions call themselves, and how the base case stops them, which was difficult but made it easier at the end of this experiment. This is because I had to trace each function call, and understand how the returned values are used through each of the calculations, and tracing the factorial function. This gave myself a chance to learn the call stack, and the operations used, and why the functions will terminate the opposite order. I found this easier when working through the recursive examples, which improved my understanding of the recursion concept, and has taught myself to prevent any issues such as stack overflow, and infinite recursion.
 
 ## Assignment Video Link:
-
+https://drive.google.com/file/d/15cmcR5560XIRS3f6BuSTtno5TvazHpM7/view?usp=sharing
 
 
 
