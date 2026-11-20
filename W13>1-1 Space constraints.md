@@ -1,5 +1,6 @@
 # Assignment W13 > 1/1 Space Constraints
 ## Lab Objective
+The goal of my lab is to learn, and understand how to evaluate trade-offs between time complexity, and space complexity to the memory requirements. Then looking at the difference between space complexity, and time complexity. I begin using Big O notation, and auxiliary space. Which, determines the variables, and data structures used through memory usage. We Identify between algorithms that create extra storage for those that are in place. Then both time, and space complexity to compare algorithms. And, then analyze trade-offs between time, and space under system restrictions. To recognize the recursive hidden memory cost by examining the recursive function's maximum call-stack depth.
 
 ## Assignment Code W13 > 1/1 Space Constraints
 ```cpp
@@ -187,3 +188,19 @@ int main() {
     return 0;
 }
 ```
+## Background
+### 1. What Does N Mean?
+First we have to understand what N means. It is the size of the input that an algorithm is processing. As an example, N means the number of elements in an array. So it depends on the operation, and N shows us the total number of characters or number of strings in a vector of strings. So N starting number in a countdown algorithm.
+
+### 2. How do we determine extra memory?
+So I can check to see if the algorithm creates extra RAM when starting the program. These examples can consist of vectors or arrays, different data structures, such as a hash table. This includes any temporary items or duplicates. So stack memory can be used through the recursive function calls.
+
+### 3. We then can determine any changes in additional Memory.
+To discover whether extra memory grows or remains constant when N rises. As an example, O(1) the amount of extra memory will remain constant. O(N) means the amount of memory increasing through a direct proportion to the size of input.
+
+### 4. What is the Complexity of Auxiliary Space?
+We can determine Big O space complexity of extra memory after detecting it. As an example O(1) is the auxiliary space for nested loop duplicate detection. Then a Hash table duplication detection is the auxiliary space of O(N). And, a recursive countdown describes the recursive stack frames resulting in O(N) auxiliary space.
+
+Then I used a flowchart to understand any additional memory that is required for an algorithm as the input size increases:
+<img width="672" height="527" alt="Assignment W13 1-1 Space Constraints" src="https://github.com/user-attachments/assets/44ffb723-3124-4962-8c3f-1a863d6a4a7e" />
+
