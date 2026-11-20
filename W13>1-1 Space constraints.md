@@ -202,5 +202,6 @@ To discover whether extra memory grows or remains constant when N rises. As an e
 We can determine Big O space complexity of extra memory after detecting it. As an example O(1) is the auxiliary space for nested loop duplicate detection. Then a Hash table duplication detection is the auxiliary space of O(N). And, a recursive countdown describes the recursive stack frames resulting in O(N) auxiliary space.
 
 Then I used a flowchart to understand any additional memory that is required for an algorithm as the input size increases:
+
 <img width="672" height="527" alt="Assignment W13 1-1 Space Constraints" src="https://github.com/user-attachments/assets/44ffb723-3124-4962-8c3f-1a863d6a4a7e" />
 
