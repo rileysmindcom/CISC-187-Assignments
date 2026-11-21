@@ -357,3 +357,6 @@ Recursive countdown whose argument decreases by 1 from N to 0              Propo
 
 Recursive algorithm whose active call depth grows proportionally to log N  Proportional to log N         O(log N)    The maximum number of simultaneous active frames grows the logarithm of N
 ```
+### Relate the second row to the lecture's discussion of Quicksort and its O(log N) recursive stack usage.
+Quicksort can require O(log N) recursive stack space when its active recursive depth will increase based on log N in the lecture. We can compare the countdown recursion to the depth increasing based on N, and requires less stack space. So the peak active call depth is important to this measurement.
+
