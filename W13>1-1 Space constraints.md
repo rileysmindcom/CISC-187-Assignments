@@ -205,3 +205,18 @@ Then I used a flowchart to understand any additional memory that is required for
 
 <img width="672" height="527" alt="Assignment W13 1-1 Space Constraints" src="https://github.com/user-attachments/assets/44ffb723-3124-4962-8c3f-1a863d6a4a7e" />
 
+
+## Time Complexity vs. Space Complexity
+```
+|         Statement             |                    Time, Space, or Both?         |             Reasoning         |
+|The number of operations grows linearly with N.             Time             The time complexity is O(N) because the number of operations will grow proportionally to the quantity of the input.
+
+|The algorithm creates a second vector containing N elements. Space  Its auxiliary space complexity is O(N) because the extra vector stores N elements
+
+| The algorithm performs nested loops but creates no additional data structure that grows with N.
+                                                              Time     The number of operations will increase as O(N^2)  because of nested loops so it becomes unnecessary for O(N) to have more memory.
+
+|A recursive function generates N simultaneously active stack frames at its deepest point.
+                                                              Space    The auxiliary space complexity is O(N) because each active call needs a stack frame.
+```
+
