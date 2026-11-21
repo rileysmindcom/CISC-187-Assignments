@@ -409,5 +409,10 @@ It matters because the maximum number of active calls is measured by the peak ca
 ### 9. How system constraints influence algorithm selection.
 Depending on which trade-offs are acceptable really depends on the limits of the system. A method that can be used is with minimal auxiliary space complexity can be required for a device with very little memory. So even if an algorithm requires more memory. The speed of the application would select one with a better time complexity. So the selection would be influenced by the amount of input depending on whether the original data should be kept.
 
+## Challenges
+Some of the challenges I've experienced were looking at the differences between time complexity, and space complexity, and how each are influenced by the performance of the algorithm. Because when comparing the sorting algorithms, hash tables, and nested loops I had trouble figuring out how extra memory is used. This made it easier at the end to recognize how recursion will create extra stack frames, and why iteration can complete the same task with less auxiliary space. Everything else helped me learn how Big O notation is used for memory consumption, and method selection based on the system resources and performance that's necessary.
+
+## Video Assignment Link
+
 
 
