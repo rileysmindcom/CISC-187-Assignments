@@ -360,3 +360,54 @@ Recursive algorithm whose active call depth grows proportionally to log N  Propo
 ### Relate the second row to the lecture's discussion of Quicksort and its O(log N) recursive stack usage.
 Quicksort can require O(log N) recursive stack space when its active recursive depth will increase based on log N in the lecture. We can compare the countdown recursion to the depth increasing based on N, and requires less stack space. So the peak active call depth is important to this measurement.
 
+## Final Algorithm Selection
+Suppose you are given three algorithms for the same problem:
+```
+Algorithm                    Time                Auxiliary Space
+Algorithm A                  O(N²)                    O(1)
+Algorithm B                  O(N)                     O(N)
+Algorithm C                O(N log N)               O(log N)
+```
+For each of the following situations, select an algorithm and defend your recommendation:
+
+### 1. Memory is extremely limited.
+I would choose Algorithm A because O(1) comesumes the auxiliary space. Then comparing Algorithms B, and C needs less extra RAM. Because of the O(N^2) time disadvantages, it works well when memory is the primary limitation, and with a slower running time
+### 2. Execution speed is the highest priority.
+I choose Algorithm B because it has the lowest time complexity of the three options for O(N) time. This option is predicated on the availability of memory because it requires O(N) auxiliary space.
+### 3. Both memory and execution time are constrained.
+I choose the middle option Algorithm C because it has O(log N) auxiliary space that requires less extra memory compared to Algorithm B, and O( log N) time to avoid any quadratic running time of Algorithm A.
+
+### 4. N is very large and an O(N²) running time is unacceptable.
+Because Algorithm A's O(N^2) running time is unacceptable. Meaning when the speed is the highest priority, and memory is available, Algorithm B becomes the best option since it has O(N) time, and O(N) auxiliary space. Which, making Algorithm C sense because it has O(N log N) time, and O(log N) auxiliary space. So the best decision on memory constraint would be both B, and C for avoiding O(N^2) time.
+
+## Analysis and Reflection
+
+### 1. What auxiliary space means.
+It means that extra memory than an algorithm would use in addition to the initial input is known as an auxiliary space. Which, will contain variables, additional data structures, and recursive call-stack frames.
+
+### 2. Why O(1) space does not mean that no memory is used.
+O(1) means that when the input size increases the amount of extra memory will remain constant. So the memory is still used by the method for variables, and standard operations, but doesn't grow as N increases.
+
+### 3. Why creating a vector containing N additional elements leads to O(N) auxiliary space.
+N elements must be stored in the extra vector. So O(N) auxiliary space will result from the required memory for the growing vector proportionally to N.
+
+### 4. Why an in-place algorithm may use less additional memory.
+As an addition the algorithm doesn't create a new collection to show results. Instead it will alter the original input. This may be less than the mount of extra RAM needed.
+
+### 5. Why the fastest algorithm is not always the best choice.
+There's a significant amount of extra Ram necessary for the fastest algorithm. Even if an approach has faster running time. It couldn't be practical if the machine has limited memory.
+
+### 6. Why the most memory-efficient algorithm is not always the best choice.
+Because the algorithm would require less extra memory would take much longer for completing. As an example a nested-loop duplication will detect taking O(N^2) time but would require O(1) auxiliary space.
+
+### 7. Why recursion can consume memory even when no explicit data structure is created.
+Because each recursive call will create a stack frame with the data required to carry out the function. So even though the program didn't specifically say to establish a data structure these frames will make use of memory.
+
+### 8. Why peak call-stack depth matters when analyzing recursive space complexity.
+It matters because the maximum number of active calls is measured by the peak call stack depth. So the maximum depth shows how much stack memory is required at once because each active call will consume a stack frame.
+
+### 9. How system constraints influence algorithm selection.
+Depending on which trade-offs are acceptable really depends on the limits of the system. A method that can be used is with minimal auxiliary space complexity can be required for a device with very little memory. So even if an algorithm requires more memory. The speed of the application would select one with a better time complexity. So the selection would be influenced by the amount of input depending on whether the original data should be kept.
+
+
+
