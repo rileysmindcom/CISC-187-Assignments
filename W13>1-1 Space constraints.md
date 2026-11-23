@@ -348,7 +348,7 @@ Auxiliary-space complexity                O(N)                                  
 Uses repeated stack frames?    Yes because until the base case is reached, each recursive call adds a frame.      No because there's no addition of recursive frames. The same variable is updated by the loop.
 ```
 #### Then explain why two algorithms can have the same time complexity but different space complexities.
-We see that both countdown methods have O(N0 time complexity because they process a number of values proportional to N. So every call. The recursive variant creates a new active stack frame. Resulting in O(N) auxiliary space. The iterative variant creates O(1) auxiliary space by using a loop, and a fixed number of variables. Meaning the algorithm will carry out comparable tasks. As they will arrange those tasks in memory in different ways.
+We see that both countdown methods have O(N) time complexity because they process a number of values proportional to N. So every call. The recursive variant creates a new active stack frame. Resulting in O(N) auxiliary space. The iterative variant creates O(1) auxiliary space by using a loop, and a fixed number of variables. Meaning the algorithm will carry out comparable tasks. As they will arrange those tasks in memory in different ways.
 
 ## Peak Call-Stack Analysis
 ```
@@ -413,6 +413,6 @@ Depending on which trade-offs are acceptable really depends on the limits of the
 Some of the challenges I've experienced were looking at the differences between time complexity, and space complexity, and how each are influenced by the performance of the algorithm. Because when comparing the sorting algorithms, hash tables, and nested loops I had trouble figuring out how extra memory is used. This made it easier at the end to recognize how recursion will create extra stack frames, and why iteration can complete the same task with less auxiliary space. Everything else helped me learn how Big O notation is used for memory consumption, and method selection based on the system resources and performance that's necessary.
 
 ## Video Assignment Link
-
+https://drive.google.com/file/d/1Pn7wLPKBtLrDnLJMCpUh3TFNHXMGMYDe/view?usp=sharing
 
 
